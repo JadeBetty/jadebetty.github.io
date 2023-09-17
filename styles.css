@@ -6,39 +6,51 @@ body {
 }
 
 .navbar {
-  display: flex;
+  padding: 0 24px;
+  display: block;
   justify-content: space-between;
+  align-items: right;
 }
 
-.navbar ul {
+.nav-menu {
   list-style-type: none;
-  padding-right: 100px;
-  margin: 0px;
-  overflow: hidden;
   display: flex;
-  justify-content: space-between;
+  align-items: end;
+  gap: 60px;
 }
 
-.navbar a {
+.nav-item {
   text-decoration: none;
-  padding: 15px;
   display: inline-block;
-  text-align: center;
+  text-align: right;
   font-size: 20px;
   font-weight: bold;
   color: #c4dbff;
 }
 
-.navbar li {
-  float: none;
-  padding-left: 20px;
+.nav-branding {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  padding: 0%;
+  color: #c3d2ea;
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav-link {
+  font-size: large;
+  color: #c3d2ea;
+  text-decoration: none;
+  transition: 0.7s ease;
+  text-align: center;
 }
 
 .navbar a:hover {
   color: #cad2c5;
 }
-
-
 
 .socialsbar {
   position: fixed;
@@ -85,21 +97,30 @@ body {
 
 .hey-text-div {
   text-align: center;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 250px;
+  margin-bottom: 600px;
   display: flex;
   justify-content: center;
   /* padding-right: 70px; */
 }
 
+.aboutme-div {
+  text-align: center;
+}
 
-#logo {
-  font-size: xx-large;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  padding: 0%;
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
 #contact-link {
@@ -113,4 +134,71 @@ body {
 
 #hey-text {
   font-size: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #516073;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #707986;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #707986;
+}
+
+@media (max-width: 1390px) {
+  .hamburger {
+    display: block;
+    float: right;
+    transform: translate(0, -36px);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: 100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #3b495c;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    gap: 400px;
+    margin-right: 100px;
+  }
+
+  .nav-menu.active {
+    left: 0
+  }
+
+  .nav-branding {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .socialsbar {
+    display: none;
+  }
 }
