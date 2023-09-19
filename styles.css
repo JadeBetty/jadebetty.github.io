@@ -1,6 +1,6 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #3b495c;
   color: #dae8ff;
 }
@@ -22,6 +22,7 @@ body {
   color: #c3d2ea;
   text-decoration: none;
   text-align: center;
+  margin-left: 2rem;
 }
 
 .navbar .nav-menu {
@@ -35,48 +36,29 @@ body {
   display: inline-block;
   text-align: right;
   font-size: 20px;
+  margin-top: 20px;
   font-weight: bold;
   color: #c4dbff;
 }
 
-.navbar .nav-menu .nav-item .nav-link {
+.navbar .nav-menu .nav-socials {
+  display: none;
+  text-decoration: none;
+  padding: 8px 15px;
+  display: inline-block;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #c4dbff;
+}
+
+.navbar .nav-menu .nav-link {
   font-size: large;
   color: #c3d2ea;
   text-decoration: none;
   transition: 0.7s ease;
   text-align: center;
-}
-
-.socials-bar {
-  position: fixed;
-  padding: 5px;
-  font-size: 30px;
-  border-radius: 25px;
-  border: 3px solid #5a6373;
-  background-color: #5a6373;
-  left: 20px;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
-.socials-bar ul {
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.socials-bar li {
-  margin: 20px 5px;
-}
-
-.socials-bar i {
-  color: #728296;
-}
-
-.socials-bar a:hover i {
-  color: #3b495c;
 }
 
 .userprofile {
@@ -97,6 +79,11 @@ body {
   justify-content: center;
 }
 
+.the-text {
+  font-size: x-large;
+  margin-bottom: 100rem;
+}
+
 .aboutme-div {
   text-align: center;
 }
@@ -115,6 +102,7 @@ body {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
+
 
 #contact-link {
   text-decoration: none;
@@ -147,21 +135,24 @@ body {
 }
 
 @media (max-width: 1130px) {
-
   .navbar .nav-menu {
-      display: none;
-      position: fixed;
-      right: 0;
-      top: 43px;
-      flex-direction: column;
+    position: fixed;
+    display: none;
+    right: 0;
+    top: 43px;
+    flex-direction: column;
+  }
+
+  .navbar .nav-socials {
+    display: none;
   }
 
   .navbar .nav-menu.active {
-      display: flex;
+    display: flex;
   }
 
   .navbar .hamburger {
-      display: block;
+    display: block;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -174,9 +165,5 @@ body {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-  }
-
-  .socials-bar {
-    display: none;
   }
 }
