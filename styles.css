@@ -3,6 +3,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: #131b20;
   color: #f7f4f3;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -87,28 +88,27 @@ body {
   text-align: left;
   margin-top: 0;
   padding-left: 10rem;
+  margin-top: 5rem;
 }
 
 .aboutme-div {
   text-align: center;
 }
 
-.aboutme-div .text {
-  font-weight:normal;
-  font-size: xx-large;
-  text-align: left;
-  margin-left: 25rem;
-  margin-bottom: 0;
-}
 
 .aboutme-div .logo {
   border-radius: 30rem;
-  width: 10rem;
+  width: 15rem;
   border-color: #ffffff;
   border-width: 3px;
   border-style: solid;
   float: right;
+  margin-left: 10rem;
+  margin-right: 15rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
+
 .hamburger {
   display: none;
   cursor: pointer;
@@ -123,7 +123,6 @@ body {
   transition: all 0.3s ease-in-out;
   background-color: white;
 }
-
 
 #contact-link {
   text-decoration: none;
