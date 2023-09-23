@@ -1,8 +1,8 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: #3b495c;
-  color: #dae8ff;
+  background-color: #131b20;
+  color: #f7f4f3;
 }
 
 .navbar {
@@ -12,14 +12,16 @@ body {
   padding: 10px;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar .nav-menu a:hover {
   color: #cad2c5;
+  transition: 0.6s;
 }
 
 .navbar .nav-branding {
   font-size: xx-large;
   font-weight: bold;
-  color: #c3d2ea;
+  color: #6e93aa;
   text-decoration: none;
   text-align: center;
   margin-left: 2rem;
@@ -55,7 +57,7 @@ body {
 
 .navbar .nav-menu .nav-link {
   font-size: large;
-  color: #c3d2ea;
+  color: #607f90;
   text-decoration: none;
   transition: 0.7s ease;
   text-align: center;
@@ -79,15 +81,34 @@ body {
   justify-content: center;
 }
 
-.the-text {
+.aboutme-div .the-text {
   font-size: x-large;
   margin-bottom: 100rem;
+  text-align: left;
+  margin-top: 0;
+  padding-left: 10rem;
 }
 
 .aboutme-div {
   text-align: center;
 }
 
+.aboutme-div .text {
+  font-weight:normal;
+  font-size: xx-large;
+  text-align: left;
+  margin-left: 25rem;
+  margin-bottom: 0;
+}
+
+.aboutme-div .logo {
+  border-radius: 30rem;
+  width: 10rem;
+  border-color: #ffffff;
+  border-width: 3px;
+  border-style: solid;
+  float: right;
+}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -136,7 +157,6 @@ body {
 
 @media (max-width: 1130px) {
   .navbar .nav-menu {
-    position: fixed;
     display: none;
     right: 0;
     top: 43px;
