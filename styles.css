@@ -100,7 +100,7 @@ body {
   margin-left: 15rem;
 }
 
-.aboutme-div .logo {
+.logo {
   border-radius: 30rem;
   width: 15rem;
   border-color: #ffffff;
@@ -130,7 +130,6 @@ body {
 
 .expriences {
   display: flex;
-  align-items: center;
   flex-direction: row;
   list-style-type: none;
 }
@@ -141,6 +140,7 @@ body {
   padding-left: 10px;
   gap: 20px;
   flex-direction: column-reverse;
+  justify-content: space-between;
 }
 
 .expriences li a {
@@ -151,7 +151,6 @@ body {
 
 .expriences li img {
   width: 3.4em;
-  padding-top: 5px;
 }
 
 .expriences li img,
@@ -181,11 +180,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #516073;
+  background-color: #707986;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #707986;
+  background-color: #516073;
   border-radius: 25px;
 }
 
@@ -225,9 +224,25 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .aboutme-div .logo {
+  .logo {
     width: 10rem;
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .logo {
+    display: none;
+  }
+  .aboutme-div .the-text {
+    margin-left: 2rem;
+    padding: 0;
+    margin-right: 1rem;
+  }
+  .aboutme {
+    text-align: center;
+    margin-left: 0;
   }
 }
