@@ -88,7 +88,7 @@ body {
   text-align: left;
   margin-top: 0;
   padding-left: 10rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .aboutme-div {
@@ -126,6 +126,41 @@ body {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: white;
+}
+
+.expriences {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.expriences li {
+  display: flex;
+  margin: 0;
+  padding-left: 10px;
+  gap: 20px;
+  flex-direction: column-reverse;
+}
+
+.expriences li a {
+  text-decoration: none;
+  color: #6e93aa;
+  font-size: 1.5rem;
+}
+
+.expriences li img {
+  width: 3.4em;
+  padding-top: 5px;
+}
+
+.expriences li img,
+.expriences li i {
+  padding-left: 20px;
+}
+.expriences li a:hover {
+  color: #b5c4ce;
+  transition: 1s;
 }
 
 #contact-link {
