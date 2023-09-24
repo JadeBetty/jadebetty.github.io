@@ -95,6 +95,10 @@ body {
   text-align: center;
 }
 
+.aboutme {
+  text-align: left;
+  margin-left: 15rem;
+}
 
 .aboutme-div .logo {
   border-radius: 30rem;
@@ -184,5 +188,11 @@ body {
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .aboutme-div .logo {
+    width: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
