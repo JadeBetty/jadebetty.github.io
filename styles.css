@@ -137,7 +137,7 @@ body {
 .expriences li {
   display: flex;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 15px;
   gap: 20px;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -147,16 +147,14 @@ body {
   text-decoration: none;
   color: #6e93aa;
   font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
 }
 
-.expriences li img {
-  width: 3.4em;
+.expriences li a img {
+  width: 3em;
 }
 
-.expriences li img,
-.expriences li i {
-  padding-left: 20px;
-}
 .expriences li a:hover {
   color: #b5c4ce;
   transition: 1s;
