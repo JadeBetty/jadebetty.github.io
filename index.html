@@ -16,9 +16,15 @@
   <header>
     <nav class="navbar">
       <a class="nav-branding" href="#home">JadeBetty</a>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
       <ul class="nav-menu">
         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link" onclick="scrollToSection(event)">About</a></li>
         <li class="nav-item">
           <a href="#projects" class="nav-link">Projects</a>
         </li>
@@ -32,11 +38,6 @@
           <a href="https://github.com/JadeBetty" class="nav-link" target="_blank">Github</a>
         </li>
       </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
     </nav>
   </header>
 
@@ -47,14 +48,14 @@
       </h1>
       <p id="heytext-p">
         I'm currently a student in Cambodia, learning TypeScript as a
-        programmer!<br />
+        programmer!<br/>
         Feel free to <a href="#contact" id="contact-link">contact</a> me!
       </p>
     </div>
   </div>
   <div>
     <img src="images/favicon.png" class="logo">
-    <div class="aboutme-div">
+    <div class="aboutme-div" id="about">
       <h1 class="aboutme">About Me</h1>
       <p class="the-text">
         I'm JadeBetty, I have started programming in the at the start of 2020,
@@ -67,10 +68,11 @@
     </div>
   </div>
 
-
-
-  <ul class="expriences">
-    <li class="content">
+  <div class="expriences">
+    <h1>Expriences</h1>
+    <p>After some time of programming, here is what I have learned.</p>
+    <ul class="expriences-bar">
+    <li>
       <a href="https://javascript.com" target="_blank">
         <img src="/images/javascript.png" style="border-radius: 7px;">
       </a>
@@ -102,11 +104,12 @@
     </li>
     <li>
       <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">
-        <img src="/images/css.png" style="width: 5.1rem;">
+        <img src="/images/css.png" style="width: 2.8em;">
       </a>
       <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
     </li>
   </ul>
+  </div>
 
   <script src="scripts.js"></script>
 </body>

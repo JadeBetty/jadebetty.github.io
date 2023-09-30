@@ -17,3 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
     navMenu.classList.remove("active")
   }))
 });
+
+function scrollToSection(event) {
+  event.preventDefault();
+  const target = document.querySelector(event.target.getAttribute("href"));
+  target.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}

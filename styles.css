@@ -64,6 +64,21 @@ body {
   text-align: center;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 .userprofile {
   height: 100px;
   border-radius: 30px;
@@ -84,7 +99,7 @@ body {
 
 .aboutme-div .the-text {
   font-size: x-large;
-  margin-bottom: 100rem;
+  margin-bottom: 40rem;
   text-align: left;
   margin-top: 0;
   padding-left: 10rem;
@@ -93,6 +108,7 @@ body {
 
 .aboutme-div {
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 .aboutme {
@@ -113,51 +129,55 @@ body {
   margin-bottom: 0rem;
 }
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
 
 .expriences {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10rem;
+}
+
+.expriences .expriences-bar {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  justify-content: center;
+  padding-left: 0;
 }
 
-.expriences li {
+.expriences .expriences-bar li {
   display: flex;
   margin: 0;
   padding-left: 15px;
   gap: 20px;
   flex-direction: column-reverse;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.expriences li a {
+.expriences .expriences-bar li a {
   text-decoration: none;
   color: #6e93aa;
   font-size: 1.5rem;
   text-align: center;
-  align-items: center;
 }
 
-.expriences li a img {
-  width: 3em;
+.expriences .expriences-bar li a img {
+  width: 2.5em;
 }
 
-.expriences li a:hover {
+.expriences .expriences-bar li a:hover {
   color: #b5c4ce;
   transition: 1s;
+}
+
+.expriences p {
+  font-size: 1.5rem;
 }
 
 #contact-link {
@@ -196,6 +216,11 @@ body {
     right: 0;
     top: 43px;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
   }
 
   .navbar .nav-socials {
@@ -227,8 +252,15 @@ body {
     margin-left: 5rem;
     margin-right: 5rem;
   }
-}
 
+  .aboutme-div .aboutme {
+    margin-left: 4rem;
+  }
+
+  .aboutme-div .the-text {
+    padding: 4rem;
+  }
+}
 
 @media (max-width: 500px) {
   .logo {
