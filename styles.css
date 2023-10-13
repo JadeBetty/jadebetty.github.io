@@ -4,6 +4,7 @@ body {
   background-color: #131b20;
   color: #f7f4f3;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .navbar {
@@ -91,7 +92,7 @@ body {
 .hey-text-div {
   text-align: center;
   margin-top: 250px;
-  margin-bottom: 600px;
+  margin-bottom: 300px;
   padding: 0px 86px;
   display: flex;
   justify-content: center;
@@ -108,7 +109,7 @@ body {
 
 .aboutme-div {
   text-align: center;
-  scroll-behavior: smooth;
+  margin-top: 600px;
 }
 
 .aboutme {
@@ -129,8 +130,6 @@ body {
   margin-bottom: 0rem;
 }
 
-
-
 .expriences {
   text-align: center;
   display: flex;
@@ -139,7 +138,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 10rem;
+  margin-bottom: 70rem;
 }
 
 .expriences .expriences-bar {
@@ -148,15 +147,16 @@ body {
   list-style-type: none;
   justify-content: center;
   padding-left: 0;
+  text-align: center;
 }
 
 .expriences .expriences-bar li {
   display: flex;
   margin: 0;
-  padding-left: 15px;
+  padding: 10px;
   gap: 20px;
   flex-direction: column-reverse;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -179,6 +179,115 @@ body {
 .expriences p {
   font-size: 1.5rem;
 }
+
+
+.projects-hero-text {
+  text-align: center;
+}
+
+.projects {
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 60rem;
+}
+
+.projects .project-1,
+.projects .project-2,
+.projects .project-3 {
+  background-image: initial;
+  border: 4px solid #6d777e;
+  padding: 40px;
+  border-radius: 16px;
+  margin-top: 25px;
+  width: auto;
+}
+
+.projects .project-1 h2,
+.projects .project-2 h2,
+.projects .project-3 h2 {
+  font-size: 2rem;
+}
+
+
+.projects .project-1 p,
+.projects .project-2 p,
+.projects .project-3 p {
+  font-size: 1.3rem;
+}
+
+.projects .project-1 button,
+.projects .project-2 button,
+.projects .project-3 button {
+  font-size: 20px;
+  width: max-content;
+  display: inline-block;
+  color: #f7f4f3;
+  padding: 12px 19.2px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #6d777e;
+  transition: all .4s ease;
+}
+
+.projects .project-1 a,
+.projects .project-2 a,
+.projects .project-3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects .project-1 button:hover,
+.projects .project-2 button:hover, 
+.projects .project-3 button:hover {
+  background-color: #b9bcd5;
+  color: #131b20;
+}
+
+
+.contact-div {
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction:row;
+  align-items: center;
+  gap: 30px;
+}
+
+#contact h1 {
+  text-align: center;
+}
+
+.contact-div .email,
+.contact-div .discord,
+.contact-div .twitter {
+  border-radius: 16px;
+  border: 3px solid transparent;
+  background-color: #21262b;
+  padding: 40px;
+  margin-top: 25px;
+  width: 15rem;
+}
+
+
+.contact-div a {
+  text-decoration: none;
+  color: #f7f4f3;
+}
+
+.contact-div .email:hover,
+.contact-div .discord:hover,
+.contact-div .twitter:hover {
+  background: transparent;
+  border-color: #6d777e;
+  transition: all .4s ease;
+}
+
 
 #contact-link {
   text-decoration: none;
@@ -258,11 +367,11 @@ body {
   }
 
   .aboutme-div .the-text {
-    padding: 4rem;
+    padding-left: 4rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .logo {
     display: none;
   }
@@ -273,6 +382,23 @@ body {
   }
   .aboutme {
     text-align: center;
-    margin-left: 0;
+    margin-left: 0rem !important;
+    margin-right: 1rem;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #707986;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #516073;
+    border-radius: 12.5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #707986;
   }
 }
