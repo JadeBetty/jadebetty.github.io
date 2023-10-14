@@ -348,14 +348,15 @@ body {
   padding: 12px 19.2px;
   border-radius: 0.4rem;
   cursor: pointer;
-  background: transparent;
-  border: 1px solid #6d777e;
+  background: #131b20;
+  border: none;
   transition: all 0.4s ease;
 }
 
 .contact-form button:hover {
-  background-color: #f3f3f3;
-  color: #131b20;
+  background-color: #3d4f5c;
+  color: #b5c4ce;
+  border: none;
 }
 
 
