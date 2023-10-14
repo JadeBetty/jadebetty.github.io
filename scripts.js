@@ -26,3 +26,9 @@ function scrollToSection(event) {
     block: "start"
   });
 }
+
+
+document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
+  event.preventDefault();
+  alert('This button does nothing because I don\'t know any PHP. However you can email me at contact@jadebetty.is-a.dev.');
+});

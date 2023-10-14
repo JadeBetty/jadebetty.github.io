@@ -31,7 +31,7 @@
         <li class="nav-item">
           <a href="#contact" class="nav-link">Contact</a>
         </li>
-        <li class="nav-socials">
+        <li class="nav-item">
           <a href="https://github.com/JadeBetty/jadebetty.github.io" class="nav-link" target="_blank">Github</a>
         </li>
       </ul>
@@ -154,7 +154,7 @@
         <div class="email">
           <i class="fa-regular fa-envelope fa-2xl"></i>
           <h2>Email</h2>
-          <h3>contact@jadebetty.is-a.dev</h3>
+          <h4>contact@jadebetty.is-a.dev</h4>
         </div>
       </a>
 
@@ -176,9 +176,29 @@
       </a>
     </div>
 
+    <div class="contact-form">
+      <h2>Contact</h2>
+      <form action="index.php" method="POST">
+        <label class="email">
+          <input type="email" name="Email" required placeholder="Email" autocomplete="off">
+        </label>
+        <label class="name">
+          <input type="text" name="Name" required placeholder="Name" autocomplete="off">
+        </label>
+        <label class="message">
+          <textarea name="Message" required placeholder="Message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </div>
 
 
+  <footer>
+    <h2>JadeBetty</h2>
+    <p>© JadeBetty</p>
+    <p>This portfolio is insipred by <a href="https://v1.neon.is-a.dev" target="_blank">this portfolio</p>
+  </footer>
   <script src="scripts.js"></script>
 </body>
 

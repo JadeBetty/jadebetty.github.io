@@ -39,23 +39,13 @@ body {
   padding: 8px 15px;
   display: inline-block;
   text-align: right;
+  align-items: end;
   font-size: 20px;
   margin-top: 20px;
   font-weight: bold;
   color: #c4dbff;
 }
 
-.navbar .nav-menu .nav-socials {
-  display: none;
-  text-decoration: none;
-  padding: 8px 15px;
-  display: inline-block;
-  text-align: right;
-  font-size: 20px;
-  margin-top: 20px;
-  font-weight: bold;
-  color: #c4dbff;
-}
 
 .navbar .nav-menu .nav-link {
   font-size: large;
@@ -138,7 +128,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 70rem;
+  margin-bottom: 45rem;
 }
 
 .expriences .expriences-bar {
@@ -180,7 +170,6 @@ body {
   font-size: 1.5rem;
 }
 
-
 .projects-hero-text {
   text-align: center;
 }
@@ -191,7 +180,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 60rem;
+  margin-bottom: 45rem;
 }
 
 .projects .project-1,
@@ -211,7 +200,6 @@ body {
   font-size: 2rem;
 }
 
-
 .projects .project-1 p,
 .projects .project-2 p,
 .projects .project-3 p {
@@ -230,7 +218,7 @@ body {
   cursor: pointer;
   background: transparent;
   border: 1px solid #6d777e;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .projects .project-1 a,
@@ -241,12 +229,11 @@ body {
 }
 
 .projects .project-1 button:hover,
-.projects .project-2 button:hover, 
+.projects .project-2 button:hover,
 .projects .project-3 button:hover {
   background-color: #b9bcd5;
   color: #131b20;
 }
-
 
 .contact-div {
   text-align: center;
@@ -254,9 +241,10 @@ body {
   padding-right: 150px;
   display: flex;
   justify-content: center;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   gap: 30px;
+  margin-bottom: 60px;
 }
 
 #contact h1 {
@@ -268,12 +256,12 @@ body {
 .contact-div .twitter {
   border-radius: 16px;
   border: 3px solid transparent;
-  background-color: #21262b;
+  background-color: #1d262c;
   padding: 40px;
   margin-top: 25px;
   width: 15rem;
+  white-space: nowrap;
 }
-
 
 .contact-div a {
   text-decoration: none;
@@ -285,9 +273,106 @@ body {
 .contact-div .twitter:hover {
   background: transparent;
   border-color: #6d777e;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
+/* .contact-div h4 {
+  font-size: 0.85rem;
+  text-align: center;
+} */
+
+.contact-form {
+  padding: 50px;
+  border-radius: 16px;
+  background: #1d262c;
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+
+
+.contact-form label {
+  min-width: 100%;
+  padding: 15px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.1);
+  color: #b5c4ce;
+  font-size: 0.95rem;
+  border: none;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 130px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  caret-color: auto;
+  width: 100%;
+  color: #b5c4ce;
+  font-size: medium;
+}
+
+.contact-form input {
+  border: none; 
+  outline: none;
+  background-color: transparent;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  caret-color: auto;
+  width: 100%;
+  color: #b5c4ce;
+  font-size: medium;
+}
+
+.contact-form button {
+  font-size: 20px;
+  width: max-content;
+  display: inline-block;
+  color: #f7f4f3;
+  padding: 12px 19.2px;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #6d777e;
+  transition: all 0.4s ease;
+}
+
+.contact-form button:hover {
+  background-color: #f3f3f3;
+  color: #131b20;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+footer a{
+  text-decoration: none;
+  color: #516073;
+}
+
+footer a:hover {
+  color: #aeb3b9;
+  transition: all 0.4s;
+}
 
 #contact-link {
   text-decoration: none;
@@ -307,16 +392,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #707986;
+  background-color: #1d262c;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #516073;
+  background-color: #3d4f5c;
   border-radius: 25px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #707986;
+  background-color: #5a6770;
+  transition: all 0.5s;
 }
 
 @media (max-width: 1130px) {
@@ -324,8 +410,11 @@ body {
     display: none;
     right: 0;
     top: 43px;
-    flex-direction: column;
+    flex-direction:row;
     width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   .navbar {
@@ -368,6 +457,17 @@ body {
 
   .aboutme-div .the-text {
     padding-left: 4rem;
+  }
+
+  .contact-div .email,
+  .contact-div .discord,
+  .contact-div .twitter {
+    border-radius: 16px;
+    border: 3px solid transparent;
+    background-color: #1d262c;
+    padding: 40px;
+    margin-top: 25px;
+    width: 14rem;
   }
 }
 
