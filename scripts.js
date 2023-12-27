@@ -30,5 +30,5 @@ function scrollToSection(event) {
 
 document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
   event.preventDefault();
-  alert('This button does nothing because I don\'t know any PHP. However you can email me at contact@jadebetty.is-a.dev.');
+  alert('This button does nothing because I don\'t know any PHP and Github pages does not support PHP. However you can email me at contact@jadebetty.is-a.dev.');
 });

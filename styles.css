@@ -10,17 +10,20 @@ body {
 
 @font-face {
   font-family: SanFrancisco;
-  src: url("fonts/SanFrancisco.woff") format("woff"), url("fonts/SanFrancisco.tff")  format("truetype");
+  src: url("fonts/SanFrancisco.woff") format("woff"),
+    url("fonts/SanFrancisco.tff") format("truetype");
 }
 
 @font-face {
   font-family: SanFrancisco-Light;
-  src: url("fonts/SanFrancisco-light.ttf") format("woff"), url("fonts/SanFrancisco-light.ttf")  format("truetype");
+  src: url("fonts/SanFrancisco-light.ttf") format("woff"),
+    url("fonts/SanFrancisco-light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: SanFrancisco-Medium;
-  src: url("fonts/SanFrancisco-medium.ttf") format("woff"), url("fonts/SanFrancisco-medium.ttf")  format("truetype");
+  src: url("fonts/SanFrancisco-medium.ttf") format("woff"),
+    url("fonts/SanFrancisco-medium.ttf") format("truetype");
 }
 
 .navbar {
@@ -61,7 +64,6 @@ body {
   font-weight: bold;
   color: #c4dbff;
 }
-
 
 .navbar .nav-menu .nav-link {
   font-size: large;
@@ -154,6 +156,7 @@ body {
   justify-content: center;
   padding-left: 0;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .expriences .expriences-bar li {
@@ -196,7 +199,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 45rem;
+  margin-bottom: 25rem;
 }
 
 .projects .project-1,
@@ -261,6 +264,7 @@ body {
   align-items: center;
   gap: 30px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 
 #contact h1 {
@@ -318,8 +322,6 @@ body {
   text-align: center;
 }
 
-
-
 .contact-form label {
   min-width: 100%;
   padding: 15px;
@@ -337,7 +339,7 @@ body {
   outline: none;
   background-color: transparent;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   caret-color: auto;
   width: 100%;
   color: #b5c4ce;
@@ -345,11 +347,11 @@ body {
 }
 
 .contact-form input {
-  border: none; 
+  border: none;
   outline: none;
   background-color: transparent;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   caret-color: auto;
   width: 100%;
   color: #b5c4ce;
@@ -375,14 +377,13 @@ body {
   border: none;
 }
 
-
 footer {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-footer a{
+footer a {
   text-decoration: none;
   color: #516073;
 }
@@ -428,7 +429,7 @@ footer a:hover {
     display: none;
     right: 0;
     top: 43px;
-    flex-direction:row;
+    flex-direction: row;
     width: 100%;
     align-items: center;
     text-align: center;
@@ -506,16 +507,16 @@ footer a:hover {
   ::-webkit-scrollbar {
     width: 5px;
   }
-  
+
   ::-webkit-scrollbar-track {
     background-color: #1d262c;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background-color: #3d4f5c;
     border-radius: 25px;
   }
-  
+
   ::-webkit-scrollbar-thumb:hover {
     background-color: #5a6770;
     transition: all 0.5s;
@@ -533,5 +534,62 @@ footer a:hover {
 
   .contact-div .email p {
     font-size: small;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar .nav-branding {
+    margin-left: 0rem;
+  }
+
+  .hey-text-div {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    padding: 0px 86px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutme-div {
+    text-align: center;
+    margin-top: 300px;
+  }
+
+  .aboutme-div .the-text {
+    margin-bottom: 30rem;
+  }
+
+  .projects {
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 45rem;
+  }
+
+  .projects .project-1,
+  .projects .project-2,
+  .projects .project-3 {
+    background-image: initial;
+    border: 4px solid #6d777e;
+    padding: 25px;
+    border-radius: 16px;
+    margin-top: 25px;
+    width: auto;
+  }
+
+  .contact-div {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
   }
 }
